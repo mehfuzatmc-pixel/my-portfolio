@@ -1,20 +1,20 @@
 # IdeaSite Studio
 
-This repository contains two separate apps:
+This repository contains a deployable portfolio frontend and a separate API:
 
-- `frontend`: Next.js portfolio site
+- Root folder: Next.js portfolio site for Vercel
 - `backend`: Express API with SQL Server connectivity
 
 ## Deploy Frontend To Vercel
 
-The public website is in the `frontend` folder. In Vercel, set:
+The public website now deploys from the repository root. In Vercel, set:
 
 ```text
-Root Directory: frontend
+Root Directory: leave empty
 Framework Preset: Next.js
 Install Command: npm install
 Build Command: npm run build
-Output Directory: .next
+Output Directory: leave empty
 ```
 
 Add this Vercel environment variable:
@@ -23,7 +23,7 @@ Add this Vercel environment variable:
 NEXT_PUBLIC_API_URL=https://your-backend-url.com
 ```
 
-If you deploy the repository root by mistake, `vercel.json` at the root delegates the build to `frontend`.
+Do not set the output directory to `.next`. Vercel detects and serves Next.js apps automatically.
 
 ## Backend
 

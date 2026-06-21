@@ -20,14 +20,14 @@ npm start
 
 ## Deploy To Vercel
 
-Set the Vercel project root directory to this `frontend` folder.
+Deploy the repository root, not this nested folder. The root now contains the Next.js app Vercel should build.
 
 ```text
-Root Directory: frontend
+Root Directory: leave empty
 Framework Preset: Next.js
 Install Command: npm install
 Build Command: npm run build
-Output Directory: .next
+Output Directory: leave empty
 ```
 
 Add this environment variable in Vercel:
