@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# builds
+.next/
+build/
+dist/
+coverage/
+
+# environment and secrets
+.env
+.env.*
+!.env.example
+
+# local caches and logs
+.npm-cache/
+*.log
+.codex-*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# local data
+frontend/data/
