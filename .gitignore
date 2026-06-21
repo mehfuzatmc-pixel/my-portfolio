@@ -16,6 +16,9 @@ coverage/
 
 # local caches and logs
 .npm-cache/
+.localappdata/
+.vercel-data/
+.appdata/
 *.log
 .codex-*.log
 
